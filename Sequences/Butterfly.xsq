@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2024.13</version>
+    <version>2025.06</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -12,9 +12,9 @@
     <comment></comment>
     <sequenceTiming>25 ms</sequenceTiming>
     <sequenceType>Animation</sequenceType>
-    <mediaFile></mediaFile>
+    <mediaFile/>
     <sequenceDuration>600.000</sequenceDuration>
-    <imageDir></imageDir>
+    <imageDir/>
   </head>
   <nextid>1</nextid>
   <Jukebox/>
@@ -22,7 +22,7 @@
     <ColorPalette>C_BUTTON_Palette1=#FD8008,C_BUTTON_Palette2=#21FF06,C_BUTTON_Palette3=#FB02FF,C_BUTTON_Palette4=#800080,C_BUTTON_Palette5=#0000FF,C_BUTTON_Palette6=#000000,C_BUTTON_Palette7=#FC66FF,C_BUTTON_Palette8=#800002,C_CHECKBOX_Palette1=1,C_CHECKBOX_Palette2=1,C_CHECKBOX_Palette3=1,C_CHECKBOX_Palette4=1,C_CHECKBOX_Palette5=1,C_CHECKBOX_Palette6=1,C_CHECKBOX_Palette7=1</ColorPalette>
   </ColorPalettes>
   <EffectDB>
-    <Effect>B_CHOICE_BufferStyle=Per Preview,B_CHOICE_PerPreviewCamera=Top,E_CHOICE_Butterfly_Colors=Palette,E_CHOICE_Butterfly_Direction=Normal,E_SLIDER_Butterfly_Chunks=2,E_SLIDER_Butterfly_Skip=3,E_SLIDER_Butterfly_Speed=1,E_SLIDER_Butterfly_Style=1</Effect>
+    <Effect>B_CHOICE_BufferStyle=Per Preview,B_CHOICE_PerPreviewCamera=Top,E_CHOICE_Butterfly_Colors=Rainbow,E_CHOICE_Butterfly_Direction=Normal,E_SLIDER_Butterfly_Chunks=7,E_SLIDER_Butterfly_Skip=3,E_SLIDER_Butterfly_Speed=1,E_SLIDER_Butterfly_Style=7</Effect>
     <Effect>B_CHOICE_BufferStyle=As Pixel,B_SLIDER_Blur=2,E_TEXTCTRL_ColorWash_Cycles=2.0,T_CHECKBOX_Canvas=1</Effect>
   </EffectDB>
   <DataLayers>

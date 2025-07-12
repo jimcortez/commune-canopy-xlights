@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsequence BaseChannel="0" ChanCtrlBasic="0" ChanCtrlColor="0" FixedPointTiming="1" ModelBlending="true">
   <head>
-    <version>2024.13</version>
+    <version>2025.06</version>
     <author></author>
     <author-email></author-email>
     <author-website></author-website>
@@ -38,9 +38,6 @@
     <Element collapsed="0" type="model" name="Chandelier" visible="1"/>
     <Element collapsed="0" type="model" name="LegsBeacon" visible="1"/>
     <Element collapsed="0" type="model" name="Beacon" visible="1"/>
-    <Element collapsed="0" type="model" name="Susan" visible="1"/>
-    <Element collapsed="0" type="model" name="TableSusan" visible="1"/>
-    <Element collapsed="0" type="model" name="Table" visible="1"/>
     <Element collapsed="0" type="model" name="planet" visible="1"/>
   </DisplayElements>
   <ElementEffects>
@@ -49,7 +46,7 @@
     </Element>
     <Element type="model" name="All">
       <EffectLayer>
-        <Effect ref="0" name="Shader" startTime="1200" endTime="601200" palette="0"/>
+        <Effect ref="0" name="Shader" selected="1" startTime="1200" endTime="601200" palette="0"/>
       </EffectLayer>
     </Element>
     <Element type="model" name="All Legs">
@@ -64,19 +61,10 @@
     <Element type="model" name="Beacon">
       <EffectLayer/>
     </Element>
-    <Element type="model" name="Susan">
-      <EffectLayer/>
-    </Element>
-    <Element type="model" name="TableSusan">
-      <EffectLayer/>
-    </Element>
-    <Element type="model" name="Table">
-      <EffectLayer/>
-    </Element>
     <Element type="model" name="planet">
       <EffectLayer>
         <Effect ref="1" name="Color Wash" startTime="0" endTime="1000" palette="1"/>
-        <Effect ref="2" name="Color Wash" selected="1" id="1" startTime="1000" endTime="600000" palette="2"/>
+        <Effect ref="2" name="Color Wash" id="1" startTime="1000" endTime="600000" palette="2"/>
       </EffectLayer>
     </Element>
   </ElementEffects>
