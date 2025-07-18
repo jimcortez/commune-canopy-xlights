@@ -23,7 +23,6 @@
   </ColorPalettes>
   <EffectDB>
     <Effect>B_CHOICE_BufferStyle=Per Preview,B_CHOICE_PerPreviewCamera=Top,E_CHOICE_Butterfly_Colors=Rainbow,E_CHOICE_Butterfly_Direction=Normal,E_SLIDER_Butterfly_Chunks=7,E_SLIDER_Butterfly_Skip=3,E_SLIDER_Butterfly_Speed=1,E_SLIDER_Butterfly_Style=7</Effect>
-    <Effect>B_CHOICE_BufferStyle=As Pixel,B_SLIDER_Blur=2,E_TEXTCTRL_ColorWash_Cycles=2.0,T_CHECKBOX_Canvas=1</Effect>
   </EffectDB>
   <DataLayers>
     <DataLayer lor_params="0" channel_offset="0" num_channels="0" num_frames="0" data="&lt;rendered: erase-mode&gt;" source="&lt;auto-generated&gt;" name="Nutcracker"/>
@@ -31,7 +30,6 @@
   <DisplayElements>
     <Element collapsed="0" type="timing" name="New Timing" visible="1" views="Master View" active="1"/>
     <Element collapsed="0" type="model" name="All" visible="1"/>
-    <Element collapsed="0" type="model" name="planet" visible="1"/>
   </DisplayElements>
   <ElementEffects>
     <Element type="timing" name="New Timing">
@@ -39,12 +37,7 @@
     </Element>
     <Element type="model" name="All">
       <EffectLayer>
-        <Effect ref="0" name="Butterfly" selected="1" startTime="0" endTime="600000" palette="0"/>
-      </EffectLayer>
-    </Element>
-    <Element type="model" name="planet">
-      <EffectLayer>
-        <Effect ref="1" name="Color Wash" startTime="0" endTime="599000" palette="0"/>
+        <Effect ref="0" name="Butterfly" startTime="0" endTime="600000" palette="0"/>
       </EffectLayer>
     </Element>
   </ElementEffects>

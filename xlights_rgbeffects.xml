@@ -25,9 +25,6 @@
         <alias name="oldname:circle"/>
       </Aliases>
     </model>
-    <model DisplayAs="Poly Line" StartSide="B" Dir="L" Antialias="1" PixelSize="2" Transparency="0" parm1="1" parm3="1" LayoutGroup="Default" name="planet" Controller="commune_chand_beacon" parm2="22" CustomColor="#ff0000" StringType="RGB Nodes" WorldPosX="7.3656" WorldPosY="93.8584" WorldPosZ="-15.1427" ScaleX="1.0000" ScaleY="1.0000" ScaleZ="1.0000" NumPoints="3" PointData="0.000000,0.000000,0.000000,-0.020199,-7.893021,0.000000,-0.001644,-0.188889,0.000000" cPointData="" versionNumber="7" StartChannel="!commune_chand_beacon:1363">
-      <ControllerConnection Protocol="ws2811" nullNodes="1" Port="4"/>
-    </model>
     <model DisplayAs="Poly Line" StringType="RGB Nodes" StartSide="B" Dir="L" Antialias="1" PixelSize="2" Transparency="0" parm1="1" parm3="1" LayoutGroup="Default" name="Leg8" Controller="commune_legs_2" parm2="121" WorldPosX="-56.2165" WorldPosY="6.5150" WorldPosZ="101.3162" ScaleX="1.0000" ScaleY="1.0000" ScaleZ="1.0000" NumPoints="10" PointData="-0.000127,-5.013801,-0.000083,0.227977,13.266685,-0.431394,1.826093,32.342255,-3.452837,4.279089,49.024948,-8.090432,10.102534,71.423691,-19.099983,16.943802,89.363739,-32.034218,25.956043,105.777397,-49.072727,36.754105,118.984200,-69.487457,45.151764,125.904694,-85.364365,56.360573,130.643585,-106.555405" cPointData="" versionNumber="7" StartChannel="!commune_legs_2:1090">
       <ControllerConnection Port="4" Protocol="ws2811" reverse="1"/>
     </model>
@@ -51,12 +48,6 @@
     </model>
     <model DisplayAs="Poly Line" StringType="RGB Nodes" StartSide="B" Dir="L" Antialias="1" PixelSize="2" Transparency="0" parm1="1" parm3="1" LayoutGroup="Default" name="Leg1" Controller="commune_legs_1" parm2="121" WorldPosX="75.4876" WorldPosY="6.4350" WorldPosZ="-138.4349" ScaleX="1.0000" ScaleY="1.0000" ScaleZ="1.0000" NumPoints="10" PointData="-0.000051,-5.013801,0.000138,-0.248442,13.266685,0.420026,-1.988632,32.342255,3.361651,-4.659965,49.024948,7.877464,-11.001111,71.423691,18.596939,-18.450937,89.363739,31.190647,-28.264658,105.777397,47.780315,-40.022972,118.984200,67.657204,-49.167732,125.904678,83.116051,-61.373287,130.643585,103.749077" cPointData="" versionNumber="7" StartChannel="!commune_legs_1:1">
       <ControllerConnection Protocol="ws2811" Port="1" reverse="1"/>
-    </model>
-    <model DisplayAs="Wreath" StringType="RGB Nodes" StartSide="B" Dir="L" Antialias="1" PixelSize="2" Transparency="0" parm1="1" parm3="1" LayoutGroup="Default" name="ChandRing" Controller="commune_chand_beacon" parm2="198" ModelChain="&gt;planet" WorldPosX="7.7749" WorldPosY="88.3317" WorldPosZ="-17.3408" ScaleX="0.1661" ScaleY="0.1661" ScaleZ="0.1661" RotateX="-90.10295105" RotateY="42.27210617" RotateZ="-0.15467569" versionNumber="7" StartChannel="!commune_chand_beacon:1429">
-      <ControllerConnection Port="4" Protocol="ws2811"/>
-      <Aliases>
-        <alias name="oldname:chandringmiddle"/>
-      </Aliases>
     </model>
     <model DisplayAs="Circle" StringType="RGB Nodes" StartSide="B" Dir="L" Antialias="1" PixelSize="2" Transparency="0" parm1="1" InsideOut="0" LayoutGroup="Default" parm3="10" name="beacon5" parm2="79" Controller="commune_chand_beacon" ModelChain="&gt;beacon4" WorldPosX="7.6222" WorldPosY="144.3808" WorldPosZ="-16.2428" ScaleX="0.5342" ScaleY="0.5342" ScaleZ="0.5342" RotateX="28.93690872" RotateY="-87.69879913" RotateZ="-118.96172333" versionNumber="7" StartChannel="!commune_chand_beacon:517">
       <ControllerConnection Port="1" Protocol="ws2811"/>
@@ -87,7 +78,7 @@
   <modelGroups>
     <modelGroup selected="0" name="All" layout="minimalGrid" GridSize="400" LayoutGroup="Default" models="All Legs,Beacon,Chandelier"/>
     <modelGroup selected="0" name="All Legs" LayoutGroup="Default" GridSize="400" DefaultCamera="UpRight" layout="Horizontal Stack" TagColour="black" models="Leg1,Leg2,Leg3,Leg4,Leg5,Leg6,Leg7,Leg8"/>
-    <modelGroup selected="0" name="Chandelier" layout="minimalGrid" GridSize="400" LayoutGroup="Default" models="ChandRing,planet"/>
+    <modelGroup selected="0" name="Chandelier" layout="minimalGrid" GridSize="400" LayoutGroup="Default" models=""/>
     <modelGroup selected="0" name="LegsBeacon" LayoutGroup="Default" GridSize="1000" XCentreOffset="0" YCentreOffset="0" DefaultCamera="Front" layout="minimalGrid" TagColour="black" models=",All Legs,Beacon"/>
     <modelGroup selected="0" name="Beacon" layout="minimalGrid" GridSize="400" LayoutGroup="Default" models="beacon1,beacon2,beacon3,beacon7,beacon6,beacon4,beacon5"/>
   </modelGroups>
@@ -96,9 +87,9 @@
     <perspective name="Default Perspective" settings="layout2|name=ModelPreview;caption=Model Preview;state=6293440;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=250;besth=250;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=HousePreview;caption=House Preview;state=6293440;dir=4;layer=1;row=0;pos=1;prop=100000;bestw=250;besth=250;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=EffectAssist;caption=Effect Assist;state=2099198;dir=4;layer=1;row=0;pos=2;prop=100000;bestw=250;besth=250;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DisplayElements;caption=Display Elements;state=6293503;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=600;besth=400;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=600;floath=400|name=Perspectives;caption=Perspectives;state=2099198;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Effect;caption=Effect Settings;state=2099196;dir=4;layer=0;row=1;pos=0;prop=100000;bestw=485;besth=874;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SelectEffect;caption=Select Effects;state=2099198;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=593;besth=406;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SearchPanel;caption=Search Panel;state=2099198;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=574;besth=376;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=EffectDropper;caption=Effects;state=2099198;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=1098;besth=732;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ValueCurveDropper;caption=Value Curves;state=2099198;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=40;besth=40;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ColourDropper;caption=Colours;state=2099198;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=35;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Jukebox;caption=Jukebox;state=2099198;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=100;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=FindData;caption=Find Data;state=2099198;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Color;caption=Color;state=2099196;dir=1;layer=0;row=0;pos=0;prop=100000;bestw=407;besth=394;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayerTiming;caption=Layer Blending;state=2099196;dir=1;layer=0;row=0;pos=1;prop=100000;bestw=304;besth=269;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LayerSettings;caption=Layer Settings;state=2099196;dir=1;layer=0;row=0;pos=2;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SequenceVideo;caption=Sequence Video;state=2099199;dir=4;layer=0;row=0;pos=0;prop=100000;bestw=320;besth=180;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=278;floaty=171;floatw=320;floath=199|name=Main Sequencer;caption=Main Sequencer;state=768;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=122;besth=62;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,1,0)=252|dock_size(4,0,1)=352|dock_size(1,0,0)=143|dock_size(5,0,0)=124|" version="2.0"/>
   </perspectives>
   <settings>
-    <LayoutMode3D value="1"/>
     <previewWidth value="1280"/>
     <previewHeight value="720"/>
+    <LayoutMode3D value="0"/>
   </settings>
   <colors>
     <DisabledEffect Red="200" Green="200" Blue="0"/>
